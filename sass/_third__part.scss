@@ -1,0 +1,242 @@
+.third__part
+{
+    background:linear-gradient(to top, #EAEDED, #d6d6d6);
+    margin: 0 1rem 0;
+    .carousel
+    {
+        position: relative;
+        .carousel-inner
+        {
+            .carousel-item
+            {
+                img
+                {
+                    background-position: 100%;
+                    height: 100vh;
+                }
+            }
+        }
+        .carousel-control-prev
+        {
+            margin-left: .3rem;
+            background-size: 68px 52px;
+            width: 10rem;
+            border-radius: .5rem;
+            height: 30rem;
+            outline: 0;
+            position: absolute;
+            background-color: transparent;
+            box-shadow:  0 0 1rem 1rem black;
+            i
+            {
+                font-size: 4.5rem;
+                transform: rotate(90deg);
+                transition: 1s;
+            }
+            &:hover i
+            {
+                transform: rotate(0deg);
+            }  
+        }
+        .carousel-control-next
+        {
+            margin-right: .3rem;
+            background-size: 68px 52px;
+            width: 10rem;
+            border-radius: .5rem;
+            height: 30rem;
+            outline: 0;
+            position: absolute;
+            background-color: transparent;
+            box-shadow:  0 0 1rem 1rem black;
+            i
+            {
+                font-size: 5rem;
+                transform: rotate(-90deg);
+                transition: 1s;
+            
+            }
+            &:hover i
+            {
+                transform: rotate(0deg);
+            }
+        }
+  
+    }
+    &__category
+    {
+        position: relative;
+        margin: 0 2rem;
+        z-index: 444;
+        margin-top: -40rem;
+        .row
+        {
+            
+            .col-lg-3
+            {
+                background: white;
+                height: 38rem;
+                position: relative;
+                margin-bottom: 5rem;
+                margin-top: 0;
+                overflow: hidden;
+                padding-top: 20px;
+                width: 23%;
+                &:nth-child(4)
+                {
+                    background-color: transparent;
+                }
+                .top
+                {
+                    padding: 0 20px;
+                    margin-bottom: 10px;
+                    h1
+                    {
+                        font-size: 20px!important;
+                        line-height: 27.3px!important;
+                        max-height: 54.6px;
+                        font-weight: 700;
+                    }
+                }
+                .footer
+                {  
+                    padding: 0rem 20px;
+                    margin-bottom: 20px;
+                    position: absolute;
+                    bottom: 0;
+                    width: 100%;
+                    a
+                    {
+                        text-decoration: none;
+                        color: #007185;
+                        padding-top: 5rem;
+                    }
+                }
+                .body-2
+                {
+                    display: flex;
+                    justify-content: space-between;
+                }
+                .body
+                {
+                    img
+                    {
+                        width: 33rem;
+                    }
+                }
+                .fourth
+                {
+                   background-color: transparent;
+                   .first
+                   {
+                        background: #fff;
+                        height: 100%;
+                        position: relative;
+                        margin-bottom: 0;
+                        margin-top: -2rem;
+                        overflow: hidden;
+                        padding-top: 20px;
+                        h2
+                        {
+                            padding: 0 20px;
+                            margin-bottom: 10px;
+                            font-size: 1.6rem;
+                            font-weight: 700;
+                            letter-spacing: 1.1;
+                        }
+                        button
+                        {
+                            margin-top: 1rem;
+                            width: 80%;
+                            padding: 0px 20px 0px 20px;
+                            border-radius: 8px;
+                            height: 29px;
+                            box-shadow: 0 2px 5px 0 rgb(213, 217, 217);
+                            color: #0F1111;
+                            background-color: #F7CA00;
+                            border: none;
+                            margin-bottom: 5rem;
+                        }
+                   }
+                   .second
+                   {
+                       img
+                       {
+                           width: 25rem;
+                       }
+                   }
+                }
+               
+            }
+            
+        }
+        .moving-objects
+        {
+            position: relative;
+        }
+        .moving-objects::after
+        {
+            position: absolute;
+            content: '';
+            top: -3.5rem;
+            width: 20rem;
+            border-radius: 50%;
+            height: .5rem;
+            background-color: red;
+            animation: moving-left 1s linear infinite alternate both;
+        }
+        @keyframes moving-left {
+            0%{left: 0;}
+            100%{left: 100%;}
+        }
+        .moving-objects::before
+        {
+            position: absolute;
+            content: '';
+            top: -3.5rem;
+            width: 20rem;
+            border-radius: 50%;
+            height: .5rem;
+            background-color: blue;
+            animation: moving-right 1s linear infinite alternate both;
+        }
+        @keyframes moving-right {
+            0%{right: 0;}
+            100%{right: 100%;}
+        }
+        .moving-objects-2
+        {
+            position: relative;
+        }
+        .moving-objects-2::after
+        {
+            position: absolute;
+            content: '';
+            top: -5rem;
+            width: 5rem;
+            height: 5rem;
+            left: 50%;
+            transform: translateX(-90%);
+            border-radius: 50%;
+            background-color: white;
+        }
+        .moving-objects-2::before
+        {
+            position: absolute;
+            content: '';
+            top: -6.5rem;
+            width: 8rem;
+            height: 8rem;
+            left: 46%;
+            transform: translateX(50%);
+            border-radius: 50%;
+            border: .8rem dotted green;
+            z-index: -4;
+            animation: rotate 2s ease-in 1.5s infinite normal both;
+        }
+        @keyframes rotate {
+            0%{transform: rotate(0);}
+            100%{transform: rotate(360deg);}
+        }
+    }
+}
